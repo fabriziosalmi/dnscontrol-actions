@@ -1,0 +1,26 @@
+name: Push DNS Configuration
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dnscontrol
+      run: |
+        wget https://github.com/StackExchange/dnscontrol/releases/latest/download/dnscontrol-Linux -O dnscontrol
+        chmod +x dnscontrol
+
+    - name: Preview DNS changes
+      run: ./dnscontrol preview
+
+    - name: Push DNS changes
+      run: ./dnscontrol push
+
