@@ -11,6 +11,7 @@ Easily update, push, and rollback your DNS configuration using [DNSControl](http
 - Manual push configuration for safer DNS updates.
 - Option to rollback to a previous DNS configuration in case of errors.
 - Support for multiple DNS providers for enhanced redundancy.
+- Optional: send notification via Apprise on rollback
 
 ## How to Use
 
