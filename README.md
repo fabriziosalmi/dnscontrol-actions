@@ -2,6 +2,8 @@
 
 Easily update, push, and rollback your DNS configuration using [DNSControl](https://github.com/StackExchange/dnscontrol) and [GitHub Actions](https://github.com/features/actions)
 
+[![Update DNS Configuration](https://github.com/fabriziosalmi/dnscontrol-actions/actions/workflows/update.yml/badge.svg)](https://github.com/fabriziosalmi/dnscontrol-actions/actions/workflows/update.yml) [![Rollback DNS Configuration](https://github.com/fabriziosalmi/dnscontrol-actions/actions/workflows/rollback-latest.yml/badge.svg)](https://github.com/fabriziosalmi/dnscontrol-actions/actions/workflows/rollback-latest.yml)
+
 ## Features
 
 - Automate DNS configuration changes using DNSControl and GitHub Actions.
