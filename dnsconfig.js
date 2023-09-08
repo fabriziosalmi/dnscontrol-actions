@@ -37,6 +37,6 @@ var DSP_POWERDNS = NewDnsProvider("powerdns", "POWERDNS");
 var REG_POWERDNS = NewRegistrar("none", "NONE");
 
 D('example.com', REG_CLOUDFLARE, DnsProvider(DSP_CLOUDFLARE),
-	A('@', '127.0.0.1', CF_PROXY_ON),
+  A('@', '127.0.0.1', CF_PROXY_ON),
   A('test', '1.2.3.4', CF_PROXY_OFF)
 );
