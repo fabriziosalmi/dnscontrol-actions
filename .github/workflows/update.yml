@@ -1,4 +1,4 @@
-name: DNS Configuration
+name: Update DNS Configuration
 
 on:
   push:
