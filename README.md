@@ -1,6 +1,6 @@
 # DNSControl Actions
 
-Easily update, push, and rollback your DNS configuration using GitHub Actions.
+Easily update, push, and rollback your DNS configuration using [DNSControl](https://github.com/StackExchange/dnscontrol) and [GitHub Actions](https://github.com/features/actions)
 
 ## Features
 
@@ -15,7 +15,7 @@ Easily update, push, and rollback your DNS configuration using GitHub Actions.
 #### Setup Credentials:
 - Refer to creds.json for example configurations of popular DNS providers.
 - Populate the appropriate fields with your credentials.
-- For security, use repository action secrets for sensitive information (e.g., CLOUDFLARE_API_USER and CLOUDFLARE_API_TOKEN).
+- For security, use repository action secrets for sensitive information (e.g., `CLOUDFLARE_API_USER` and `CLOUDFLARE_API_TOKEN`).
 
 #### Configure DNS:
 - Edit and save your DNS settings in dnsconfig.js.
