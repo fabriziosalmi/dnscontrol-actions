@@ -1,0 +1,26 @@
+name: Rollback DNS Configuration
+
+on:
+  workflow_dispatch:
+
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Revert last commit
+      run: |
+        git revert HEAD~1 --no-commit
+        git commit -m "Revert last DNS change"
+        git push
+
+    - name: Install dnscontrol
+      run: |
+        wget https://github.com/StackExchange/dnscontrol/releases/latest/download/dnscontrol-Linux -O dnscontrol
+        chmod +x dnscontrol
+
+    - name: Push reverted DNS changes
+      run: ./dnscontrol push
