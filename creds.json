@@ -1,0 +1,43 @@
+{
+  "cloudflare": {
+    "TYPE": "CLOUDFLAREAPI",
+    "accountid": "$CLOUDFLARE_API_USER",
+    "apitoken": "$CLOUDFLARE_API_TOKEN"
+  },
+  "route53": {
+    "TYPE": "ROUTE53",
+    "accesskey": "$AWS_ACCESS_KEY",
+    "secretkey": "$AWS_SECRET_KEY"
+  },
+  "gcloud": {
+    "TYPE": "GCLOUD",
+    "projectid": "$GCLOUD_PROJECT_ID",
+    "credfile": "$GCLOUD_CREDENTIALS_FILE_PATH"
+  },
+  "digitalocean": {
+    "TYPE": "DO",
+    "token": "$DO_API_TOKEN"
+  },
+  "azure": {
+    "TYPE": "AZURE",
+    "client_id": "$AZURE_CLIENT_ID",
+    "client_secret": "$AZURE_CLIENT_SECRET",
+    "subscription_id": "$AZURE_SUBSCRIPTION_ID",
+    "tenant_id": "$AZURE_TENANT_ID",
+    "resource_group": "$AZURE_RESOURCE_GROUP"
+  },
+  "powerdns": {
+    "TYPE": "POWERDNS",
+    "apikey": "$POWERDNS_API_KEY",
+    "server_url": "$POWERDNS_SERVER_URL"
+  },
+  "namecheap": {
+    "TYPE": "NAMECHEAP",
+    "api_user": "$NAMECHEAP_API_USER",
+    "api_key": "$NAMECHEAP_API_KEY",
+    "username": "$NAMECHEAP_USERNAME"
+  },
+  "none": {
+    "TYPE": "NONE"
+  }
+}
