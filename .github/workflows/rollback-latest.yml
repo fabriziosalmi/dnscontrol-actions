@@ -24,3 +24,9 @@ jobs:
 
     - name: Push reverted DNS changes
       run: ./dnscontrol push
+
+# optional: send notification via Apprise
+#   - name: Send Notification using Apprise
+#       if: always() # ensure this step runs even if the rollback fails
+#         run: |
+#           docker run -v ${{ github.workspace }}:/config caronc/apprise -vv -c /config/apprise.yml -b "Rollback action executed. Status: ${{ job.status }}"
