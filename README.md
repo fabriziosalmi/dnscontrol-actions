@@ -33,7 +33,7 @@ Easily update, push, and rollback your DNS configuration using [DNSControl](http
 ## Advanced Configuration
 
 - Multi-provider Redundancy: Define multiple DNS providers in dnsconfig.js to achieve redundancy across providers. Example: Using both Cloudflare and AWS.
-- Note: When using Cloudflare's proxying feature in combination with another DNS provider, ensure you handle the logic behind these proxies. We are currently enhancing this feature for smoother integration.
+- Note: When using Cloudflare's proxying feature in combination with another DNS provider, ensure you handle the logic behind these proxies. 
 
 ## Coming Soon
 
