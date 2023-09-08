@@ -19,6 +19,7 @@ Easily update, push, and rollback your DNS configuration using [DNSControl](http
 - Refer to creds.json for example configurations of popular DNS providers.
 - Populate the appropriate fields with your credentials.
 - For security, use repository action secrets for sensitive information (e.g., `CLOUDFLARE_API_USER` and `CLOUDFLARE_API_TOKEN`).
+- Remember to give workflows read/write permissions (https://github.com/user/repo/settings/actions)
 
 #### Configure DNS:
 - Edit and save your DNS settings in dnsconfig.js.
