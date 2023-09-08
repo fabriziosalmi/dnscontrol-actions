@@ -15,6 +15,8 @@ Easily update, push, and rollback your DNS configuration using [DNSControl](http
 
 ## How to Use
 
+**Repository visibility must be set to private to avoid exposing your dns data to the world**
+
 #### Setup Credentials:
 - Refer to creds.json for example configurations of popular DNS providers.
 - Populate the appropriate fields with your credentials.
