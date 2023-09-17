@@ -6,11 +6,11 @@ Easily update, push, and rollback your DNS configuration using [DNSControl](http
 
 ## Features
 
-- Automate DNS configuration changes using DNSControl and GitHub Actions.
-- Preview DNS changes upon each update to dnsconfig.js.
-- Manual push configuration for safer DNS updates.
-- Option to rollback to a previous DNS configuration in case of errors.
-- Support for multiple DNS providers for enhanced redundancy.
+- **DNS configuration CD/CI** using DNSControl and GitHub Actions.
+- **Preview DNS changes** upon each update to dnsconfig.js.
+- **Manual push** configuration for safer DNS updates.
+- Option to **rollback to a previous DNS configuration** in case of errors.
+- Support for **multiple DNS providers** for enhanced **redundancy**.
 - Optional: send notification via Apprise on rollback
 
 ## How to Use
