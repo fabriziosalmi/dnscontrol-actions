@@ -9,21 +9,22 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3  # Updated to the latest stable version
 
     - name: Revert last commit
       run: |
-        git revert HEAD~1 --no-commit
+        git revert --no-commit HEAD~1
         git commit -m "Revert last DNS change"
         git push
 
     - name: Install dnscontrol
       run: |
-        wget https://github.com/StackExchange/dnscontrol/releases/latest/download/dnscontrol-Linux -O dnscontrol
+        curl -L -o dnscontrol https://github.com/StackExchange/dnscontrol/releases/latest/download/dnscontrol-Linux
         chmod +x dnscontrol
 
     - name: Push reverted DNS changes
       run: ./dnscontrol push
+
 
 # optional: send notification via Apprise
 #   - name: Send Notification using Apprise
