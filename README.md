@@ -15,13 +15,15 @@ Easily update, push, and rollback your DNS configuration using [DNSControl](http
 
 ## How to Use
 
-#### Initialization
-- Clone or fork this repository
-- Make changes
-- Apply configuration via GitHub Actions
+### Quick run
+1. Clone or fork this repository
+2. Make changes
+3. Apply configuration via GitHub Actions
 
 > [!WARNING]
-> Don't forget to set repository visibility to **private**
+> Don't forget to set your repository visibility to **private** before to make changes
+
+### Basic run
 
 #### Setup Credentials:
 - Refer to creds.json for example configurations of popular DNS providers.
