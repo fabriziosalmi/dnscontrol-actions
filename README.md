@@ -17,9 +17,11 @@ Easily update, push, and rollback your DNS configuration using [DNSControl](http
 
 #### Initialization
 - Clone or fork this repository
+- Make changes
+- Apply configuration via GitHub Actions
 
 > [!WARNING]
-> If You fork this repo don't forget to set repository visibility of your forked one to **private**
+> Don't forget to set repository visibility to **private**
 
 #### Setup Credentials:
 - Refer to creds.json for example configurations of popular DNS providers.
